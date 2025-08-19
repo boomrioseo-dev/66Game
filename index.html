@@ -99,18 +99,6 @@
 
 <section class="relative text-center py-20 px-6">
 
-  <!-- IMAGEM À ESQUERDA -->
-<img src="wm.png" alt="Woman Left"
-  class="absolute left-0 ml-[5px] top-[80px] 
-  w-24 sm:w-40 md:w-[300px] 
-  opacity-95 pointer-events-none object-contain" />
-
-<!-- IMAGEM À DIREITA -->
-<img src="wm.png" alt="Woman Right"
-  class="absolute right-0 mr-[5px] top-[80px] 
-  w-24 sm:w-40 md:w-[300px] 
-  opacity-95 pointer-events-none object-contain" />
-
 
   <!-- CONTEÚDO HERO -->
   <h1 class="text-4xl sm:text-6xl font-extrabold text-yellow-300 drop-shadow-lg" style="font-family:'Playfair Display',serif">
@@ -132,18 +120,24 @@
     </a>
   </div>
 
-  <!-- CONTADOR -->
-  <div class="mt-10 flex justify-center">
-   <div class="inline-block bg-[#7B001C]/70 rounded-2xl px-8 py-6 shadow-xl">
-    <div class="text-4xl sm:text-5xl text-[#FFD700] drop-shadow-lg flex items-center justify-center gap-3" style="font-family:'Playfair Display',serif">
+<!-- CONTADOR -->
+<div class="mt-10 flex justify-center">
+  <div class="inline-block bg-[#7B001C]/70 rounded-2xl px-8 py-3">
+    <div class="text-4xl sm:text-5xl text-[#FFD700] flex items-center justify-center gap-3" style="font-family:'Playfair Display',serif">
       <span id="liveCounter">10,250</span>
-      <span class="w-4 h-4 bg-green-400 rounded-full animate-pulse shadow"></span>
+      <span class="w-4 h-4 bg-green-400 rounded-full animate-pulse"></span>
     </div>
-    <p class="mt-3 text-white/80 font-semibold">Active Spins Worldwide</p>
+    <p class="mt-1 text-white/80 font-semibold">Active Spins Worldwide</p>
   </div>
-</section>
-  
+</div>
 
+<!-- BANNER -->
+<div class="mt-2 flex justify-center">
+  <img src="ln.png" 
+       alt="Promo Banner" 
+       class="block w-full max-w-sm h-[140px] object-contain rounded-xl" />
+</div>
+  
 <!-- KPIS -->
 <section class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 py-12 px-6">
   ${CONFIG.kpis.map(k => `
